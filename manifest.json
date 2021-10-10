@@ -1,0 +1,29 @@
+{
+    "manifest_version" : 2,
+    "name" : "LeetFont",
+    "version" : "1.0",
+    "description" : "Increase font size of LeetCode's code editor",
+    "content_scripts" :[
+        {
+        "matches" : ["https://leetcode.com/problems/*"],
+        "js" : ["Content.js"]
+        }
+    ],
+    "browser_action" : {
+        "default_popup":"Popup.html",
+        "default_title":"LeetFont",
+        "default_icon": {
+            "16": "icon.png",
+            "32": "icon.png",
+            "128": "icon.png"
+            }
+    },
+    "permissions": [
+        "tabs",
+        "notifications",
+        "http://*/",
+        "https://*/"
+    ],
+    "web_accessible_resources": ["index.js", "Popup.html"]
+   
+}
