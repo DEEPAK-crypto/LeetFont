@@ -5,7 +5,7 @@ A chrome extention based on JavaScript which increases font size of LeetCode's c
 ## How to use
 1. Download the repo
 2. Got to chrome://extensions/ 
-3. Enable developer moed
+3. Enable developer mode
 4. Click on Load Unpacked
 5. Select the downloaded folder
 6. Enjoy 👍
